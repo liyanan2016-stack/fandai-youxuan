@@ -12,17 +12,24 @@ Cloudflare 反代 IP 优选工具。Android + Windows / Linux 桌面版。
 
 | 文件 | 适用 |
 |---|---|
-| `fandai-youxuan-v1.4-universal.apk` | 不确定手机架构就下这个（27MB） |
-| `fandai-youxuan-v1.4-arm64-v8a.apk` | 2016 年后的手机，省一半空间（8.4MB） |
-| `fandai-youxuan-v1.4-armeabi-v7a.apk` | 老 32 位手机（8.4MB） |
-| `fandai-youxuan-v1.4-windows-amd64.exe` | Windows 64 位 |
-| `fandai-youxuan-v1.4-windows-arm64.exe` | Windows ARM |
-| `fandai-youxuan-v1.4-linux-amd64` | Linux 64 位 |
+| `fandai-youxuan-v1.5-universal.apk` | 不确定手机架构就下这个（27MB） |
+| `fandai-youxuan-v1.5-arm64-v8a.apk` | 2016 年后的手机，省一半空间（8.4MB） |
+| `fandai-youxuan-v1.5-armeabi-v7a.apk` | 老 32 位手机（8.4MB） |
+| `fandai-youxuan-v1.5-windows-amd64.exe` | Windows 64 位 |
+| `fandai-youxuan-v1.5-windows-arm64.exe` | Windows ARM |
+| `fandai-youxuan-v1.5-linux-amd64` | Linux 64 位 |
 
 Android 最低 7.0，只申请 `INTERNET` 一个权限，无后台服务、不开机自启。
 
 桌面版双击后自动打开浏览器，服务只监听 `127.0.0.1`，局域网内其他设备访问不到。
 **关掉控制台窗口就等于退出程序**，别只关浏览器标签。
+
+## ⚠️ 使用限制
+
+**仅供中国大陆网络环境使用。** 启动时会检查出口地区，不在范围内会说明原因并拒绝使用。
+
+如果你在境内却被拒绝，通常是开着**代理或 VPN**，关掉再打开即可。
+检查失败（网络不通、超时）时不会拦你，会正常放行。
 
 ## 这个工具做什么
 
@@ -76,6 +83,11 @@ Android 最低 7.0，只申请 `INTERNET` 一个权限，无后台服务、不�
 可以。两个是独立项目，包名不同（`com.cf.ip` / `com.gf.youxuan`），互不影响。
 数据源和能力也不同：反代优选用已验证的节点列表、支持地区筛选；
 [官方优选](https://github.com/liyanan2016-stack/guanfang-youxuan)从 CF 官方子网随机拼 IP、没有地区筛选。
+
+**提示「仅供中国大陆网络环境使用」？**
+
+关掉代理或 VPN 再打开。这个检查看的是你的网络出口位置，
+开着代理时出口在境外，就会被拦下。
 
 **为什么突然扫不了、提示拿不到数据？**
 
