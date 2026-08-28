@@ -12,12 +12,12 @@ Cloudflare 反代 IP 优选工具。Android + Windows / Linux 桌面版。
 
 | 文件 | 适用 |
 |---|---|
-| `fandai-youxuan-v1.5-universal.apk` | 不确定手机架构就下这个（27MB） |
-| `fandai-youxuan-v1.5-arm64-v8a.apk` | 2016 年后的手机，省一半空间（8.4MB） |
-| `fandai-youxuan-v1.5-armeabi-v7a.apk` | 老 32 位手机（8.4MB） |
-| `fandai-youxuan-v1.5-windows-amd64.exe` | Windows 64 位 |
-| `fandai-youxuan-v1.5-windows-arm64.exe` | Windows ARM |
-| `fandai-youxuan-v1.5-linux-amd64` | Linux 64 位 |
+| `fandai-youxuan-v1.6-universal.apk` | 不确定手机架构就下这个（27MB） |
+| `fandai-youxuan-v1.6-arm64-v8a.apk` | 2016 年后的手机，省一半空间（8.4MB） |
+| `fandai-youxuan-v1.6-armeabi-v7a.apk` | 老 32 位手机（8.4MB） |
+| `fandai-youxuan-v1.6-windows-amd64.exe` | Windows 64 位 |
+| `fandai-youxuan-v1.6-windows-arm64.exe` | Windows ARM |
+| `fandai-youxuan-v1.6-linux-amd64` | Linux 64 位 |
 
 Android 最低 7.0，只申请 `INTERNET` 一个权限，无后台服务、不开机自启。
 
@@ -88,6 +88,10 @@ Android 最低 7.0，只申请 `INTERNET` 一个权限，无后台服务、不�
 
 关掉代理或 VPN 再打开。这个检查看的是你的网络出口位置，
 开着代理时出口在境外，就会被拦下。
+
+反过来，**开着代理却没被拦**是判定没拿到结果时的放行行为（宁可漏放，
+也不把网络环境复杂的正常用户锁在门外）。v1.6 收紧了这一块，
+误放行会比之前少很多。
 
 **为什么突然扫不了、提示拿不到数据？**
 
